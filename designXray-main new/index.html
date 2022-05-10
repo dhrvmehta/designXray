@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Designx </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <nav>
+            <div class="logo">
+               DesignX
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="/index.html">HOME</a></li>
+                <li><a href="/bedroom.html">BEDROOM</a></li>
+                <li><a href="/living.html">LIVING ROOM</a></li>
+                <li><a href="/kitchen.html">KITCHEN</a></li>
+                <li><a href="/backyard.html">BACKYARD</a></li>
+            </ul>
+         </nav>
+        <div id="matter">
+            <h1>Imagine your home interiors</h1>
+            <h2>We'll do the Rest</h2>
+            <div id="mainbuttons">
+                <button class="mainbuttons"> <span></span> <a href="https://github.com/rhlydv/designXray">WATCH MORE</a></button>
+                <button class="mainbuttons"> <span></span> <a href="/register.html">REGISTER</a> </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const navToggle = document.querySelector(".navbar_toggle");
+        const links = document.querySelector(".main_nav");
+
+        navToggle.addEventListener('click', function () {
+            links.classList.toggle("show_nav");
+        })
+    </script>
+</body>
+
+</html>

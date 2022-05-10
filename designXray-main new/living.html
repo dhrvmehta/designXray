@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   
+    <nav>
+        <div class="logo">
+           DesignX
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/bedroom.html">BEDROOM</a></li>
+            <li><a class="active" href="/living.html">LIVING ROOM</a></li>
+            <li><a href="/kitchen.html">KITCHEN</a></li>
+            <li><a href="/backyard.html">BACKYARD</a></li>
+        </ul>
+     </nav>
+    <div class="content">
+        <video src="/assets/living.mp4" autoplay muted loop></video>
+        <h1 class="heading"> Living Room Designs</h1>
+        <P class="para">Looking for design ideas for your living room? You've come to the right place! 
+            Our living room designs are a cut above the rest as we ensure the perfect combination of beauty
+            and functionality. Check these out!
+        </P>
+    </div>
+
+    <div class="mainproject">
+        <div class="images">
+            <img src="/assets/22.webp" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/23.webp" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/24.webp" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/25.webp" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/26.webp" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/27.webp" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/28.webp" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/29.webp" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/30.webp" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/31.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="/assets/32.jpg" alt="">
+        </div>
+        <div class="images">
+            <img  src="/assets/33.jpg" alt="">
+        </div>
+
+    </div>
+
+    <footer class="bottomfooter">
+        Designx
+    </footer>
+    <script>
+        const navToggle = document.querySelector(".navbar_toggle");
+        const links = document.querySelector(".main_nav");
+
+        navToggle.addEventListener('click', function () {
+            links.classList.toggle("show_nav");
+        })
+    </script>
+</body>
+</html>

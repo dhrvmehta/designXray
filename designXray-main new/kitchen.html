@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+       DesignX
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/bedroom.html">BEDROOM</a></li>
+        <li><a href="/living.html">LIVING ROOM</a></li>
+        <li><a class="active" href="/kitchen.html">KITCHEN</a></li>
+        <li><a href="/backyard.html">BACKYARD</a></li>
+    </ul>
+ </nav>
+  <div class="content">
+    <video src="/assets/Kitchen.mp4" autoplay muted loop></video>
+    <h1 class="heading"> Modular Kitchen Designs</h1>
+    <P class="para">Have you ever wondered why Indian kitchen design is not given as much attention as other areas of
+      the house?
+      And this despite kitchen being the busiest or most used spaces in our homes! Ironic, right?
+    </P>
+  </div>
+
+  <div class="mainproject">
+
+    <div>
+      <img class="img" src="/assets/13.webp">
+    </div>
+    <div>
+      <img class="img" src="/assets/14.webp">
+    </div>
+    <div>
+      <img class="img" src="/assets/15.webp">
+    </div>
+    <div>
+      <img class="img" src="/assets/16.webp">
+    </div>
+    <div>
+      <img class="img" src="/assets/17.webp">
+    </div>
+    <div>
+      <img class="img" src="/assets/18.webp">
+    </div>
+    <div>
+      <img class="img" src="/assets/19.webp">
+    </div>
+    <div>
+      <img class="img" src="/assets/20.webp">
+    </div>
+    <div>
+      <img class="img" src="/assets/21.webp">
+    </div>
+
+
+  </div>
+  <footer class="bottomfooter">
+    Designx
+  </footer>
+  <script>
+    const navToggle = document.querySelector(".navbar_toggle");
+    const links = document.querySelector(".main_nav");
+
+    navToggle.addEventListener('click', function () {
+      links.classList.toggle("show_nav");
+    })
+  </script>
+</body>
+
+</html>

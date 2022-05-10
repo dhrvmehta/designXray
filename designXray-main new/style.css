@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/b1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background: #212121;
+    text-align: center;
+    display: block;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+#matter {
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-30%);
+    text-align: center;
+    z-index: 0;
+}
+
+#matter h1 {
+    font-size: 70px;
+}
+
+#matter p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mainbuttons {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+/* bedroom */
+
+.heading {
+    font-family: 'Poppins',sans-serif;
+
+    color: rgb(255, 255, 255);
+    font-weight: 100px;
+    text-align: center;
+    animation: main-heading ease;
+    animation-duration: 3s;
+    animation-play-state: running;
+
+
+}
+
+p {
+    font-family: 'Poppins',sans-serif;
+
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: wavy;
+    letter-spacing: 2px;
+    padding: 5px;
+
+    color: #fff;
+    text-shadow: 3px;
+    animation-name: para;
+    animation-duration: 3s;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+    filter: opacity(60%);
+    object-fit: cover;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    position: fixed;
+    z-index: -1;
+
+}
+
+.content {
+    padding: 5% 1%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    text-align: center;
+    justify-content: center;
+}
+
+.mainproject {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 29px;
+    margin: 2% 7.5% 5%;
+}
+
+img {
+        aspect-ratio: 14 / 9;
+        max-height: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+}
+
+img:hover {
+    transform: scale(1.01);
+}
+
+.bottomfooter {
+    text-align: center;
+    padding: 2% 0%;
+    color: #fff;
+    font-weight: 400;
+    font-size: x-large
+}
+
+@keyframes main-heading {
+    0% {
+        /* text-transform: uppercase; */
+        color: #000000;
+        transform: scale(1.01);
+    }
+
+    50% {
+        /* text-transform: lowercase; */
+        color: #ffffff;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes para {
+
+    0% {
+        color: #000000;
+    }
+
+    50% {
+        color: #ffffff;
+    }
+}
+
+
+
+
+/* Media Queries */
+
+@media (max-width:1200px) {
+    #matter h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width:1000px) {
+    .banner {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/b1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #matter h1 {
+        font-size: 50px;
+    }
+
+    #matter h2 {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:800px) {
+    #matter h1 {
+        font-size: 40px;
+    }
+
+    #matter h2 {
+        font-size: 15px;
+    }
+
+    #mainbuttons button {
+        width: 150px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:550px) {
+    .heading{
+        font-size: 25px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+@media (max-width:425px) {
+    .heading{
+        font-size: 27px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .mainproject {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+}
+@media(max-width:320px){
+    #mainbuttons button {
+        width: 130px;
+        font-size: 10px;
+    }
+}
